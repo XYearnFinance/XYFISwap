@@ -32,7 +32,7 @@ contract Ownable is Context {
         require(isOwner(), "Ownable: caller is not the owner");
         _;
     }
-    function isOwner() public view returns (bool) {
+    function isOwner() public view returns (bool) { 
         return _msgSender() == _owner;
     }
 }
