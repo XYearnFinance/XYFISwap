@@ -33,7 +33,7 @@ interface IUniswapV2Pair {
 
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external;
 
-    event Mint(address indexed sender, uint amount0, uint amount1);
+    event Mint(address indexed sender, uint amount0, uint amount1); 
     event Burn(address indexed sender, uint amount0, uint amount1, address indexed to);
     event Swap(
         address indexed sender,
